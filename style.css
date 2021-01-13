@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+nav a{
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+nav div{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+    width: 50px;
+}
+
+span{
+    background-color: white;
+    border-radius: 10px;
+    height: 8px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+header{
+    background-color: red;
+    background-image: url(images/desktop.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: flex;
+    }
+    nav{
+        background-color: springgreen;
+        justify-content: flex-end;
+    }
+    nav a{
+        display: none;
+    }
+    
+    header{
+        background-image: url(images/mobile.jpg);
+        height: 700px;
+    }
+}
